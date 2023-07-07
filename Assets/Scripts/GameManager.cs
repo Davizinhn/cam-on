@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
 
     public void Perdeu()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
