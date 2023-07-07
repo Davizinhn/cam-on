@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6340688892350371946}
   - component: {fileID: 8077858757756841120}
   - component: {fileID: 6340688892350371945}
+  - component: {fileID: -9101310870130748015}
   m_Layer: 0
   m_Name: blockCurveLow
   m_TagString: Untagged
@@ -103,3 +104,17 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &-9101310870130748015
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7717672011181346165}
+  m_Material: {fileID: 13400000, guid: d926619b9c6967f4a8e44e037babb1e3, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1941736393149372584, guid: ab2e1ae09856a864e968c19c09413d0d, type: 3}

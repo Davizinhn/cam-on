@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3185268087511217800}
   - component: {fileID: 851372997182652994}
   - component: {fileID: 851372997182653021}
+  - component: {fileID: -5777400391500462428}
   m_Layer: 0
   m_Name: blockCurveHalf
   m_TagString: Untagged
@@ -103,3 +104,17 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &-5777400391500462428
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211559880725439383}
+  m_Material: {fileID: 13400000, guid: d926619b9c6967f4a8e44e037babb1e3, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6812379794786881297, guid: 8d102cb6b5c604c4585c88f8dd6a4075, type: 3}
