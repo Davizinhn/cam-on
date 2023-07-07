@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool gameStarted = true;
+    public int curFase = 1;
+    public static GameManager instance;
+
+    public void Start()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Perdeu()
     {
-        
+
     }
 }
