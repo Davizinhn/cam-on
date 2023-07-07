@@ -172,7 +172,7 @@ public class FirstPersonController : MonoBehaviour
 
         if(useSprintBar)
         {
-            sprintBarBG.gameObject.SetActive(true);
+            /*sprintBarBG.gameObject.SetActive(true);
             sprintBar.gameObject.SetActive(true);
 
             float screenWidth = Screen.width;
@@ -182,17 +182,17 @@ public class FirstPersonController : MonoBehaviour
             sprintBarHeight = screenHeight * sprintBarHeightPercent;
 
             sprintBarBG.rectTransform.sizeDelta = new Vector3(sprintBarWidth, sprintBarHeight, 0f);
-            sprintBar.rectTransform.sizeDelta = new Vector3(sprintBarWidth - 2, sprintBarHeight - 2, 0f);
+            sprintBar.rectTransform.sizeDelta = new Vector3(sprintBarWidth - 2, sprintBarHeight - 2, 0f);*/
 
             if(hideBarWhenFull)
             {
-                sprintBarCG.alpha = 0;
+                //sprintBarCG.alpha = 0;
             }
         }
         else
         {
-            sprintBarBG.gameObject.SetActive(false);
-            sprintBar.gameObject.SetActive(false);
+            //sprintBarBG.gameObject.SetActive(false);
+            //sprintBar.gameObject.SetActive(false);
         }
 
         #endregion
