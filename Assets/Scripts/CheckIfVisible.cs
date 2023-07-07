@@ -15,7 +15,10 @@ public class CheckIfVisible : MonoBehaviour
 
     public void OnBecameInvisible()
     {
-        GameManager.instance.Perdeu();
+        if(GameManager.instance.gameStarted)
+        {
+            GameManager.instance.Perdeu();
+        }
     }
 
 }
