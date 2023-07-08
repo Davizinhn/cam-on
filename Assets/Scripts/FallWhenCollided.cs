@@ -12,20 +12,11 @@ public class FallWhenCollided : MonoBehaviour
     {
         if(col.gameObject.tag=="Player")
         {
+            col.gameObject.GetComponent<FirstPersonController>().enableJump = false;
             gameObject.AddComponent<Rigidbody>();
             this.gameObject.GetComponent<Collider>().isTrigger=ha;
             this.gameObject.GetComponent<AudioSource>().Play();
         }
-        if(hi)
-        {
-                gameObject.AddComponent<Rigidbody>();
-                this.gameObject.GetComponent<Collider>().isTrigger=ha;
-                this.gameObject.GetComponent<AudioSource>().Play();
-        }
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
         if(hi)
         {
                 gameObject.AddComponent<Rigidbody>();

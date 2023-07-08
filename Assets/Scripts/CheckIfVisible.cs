@@ -32,7 +32,7 @@ public class CheckIfVisible : MonoBehaviour
                 RaycastHit hit;
                 Vector3 direction = objeto.transform.position - Camera.main.transform.position;
 
-                if (Physics.Raycast(Camera.main.transform.position, direction, out hit))
+                if (Physics.Raycast(Camera.main.transform.position, direction, out hit, Mathf.Infinity))
                 {
                     // Verifique se o objeto atingido pelo raio de colisão não é o objeto-alvo
                     if (hit.collider.gameObject.layer == 3)
@@ -52,7 +52,7 @@ public class CheckIfVisible : MonoBehaviour
         }
 
         // Caso o objeto não tenha um Renderer, assumimos que ele está visível
-        return true;
+        return false;
     }
 
 

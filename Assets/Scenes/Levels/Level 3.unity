@@ -2218,6 +2218,10 @@ PrefabInstance:
       value: treePine (25)
       objectReference: {fileID: 0}
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -6733,6 +6737,10 @@ PrefabInstance:
       value: treePine (20)
       objectReference: {fileID: 0}
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9151,6 +9159,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 459801984250027706, guid: f649b547e393a834bb442a82f7ca2149, type: 3}
+      propertyPath: jumpPower
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 459801984250027707, guid: f649b547e393a834bb442a82f7ca2149, type: 3}
       propertyPath: m_Name
       value: FirstPersonController
@@ -10776,6 +10788,10 @@ PrefabInstance:
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_Name
       value: treePine (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_NavMeshLayer
