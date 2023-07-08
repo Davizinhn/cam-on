@@ -5,43 +5,75 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public bool gameStarted = true;
+    public bool gameStarted = false;
     public int curFase = 0;
+    public int maxFases = 10;
     public static GameManager instance;
 
+
     public void Start()
-    {
+    {        
+        gameStarted=false;
         instance = this;
         int.TryParse(SceneManager.GetActiveScene().name.Split(" ")[1], out curFase);
+        Invoke("Comecar", 0.1f);
+
+    }
+
+    public void Comecar()
+    {
+        gameStarted = true;
     }
 
     public void Perdeu()
     {
+        gameStarted=false;
+        SceneManager.LoadScene("DieScreen", LoadSceneMode.Additive);
+        Time.timeScale=0.25f;
+        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().mouseSensitivity = 0.05f;
+        StartCoroutine(PerderSequence());
+    }
+
+    IEnumerator PerderSequence()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        Time.timeScale=1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void PassarDeFase()
+    public void PassarDeFase(bool real = false)
     {
-        gameStarted=false;
-        if(SceneExists("Fase "+(curFase+1).ToString()))
+        if(!real)
         {
-            SceneManager.LoadScene("Fase "+(curFase+1).ToString());
+            if(gameStarted)
+            {
+                gameStarted=false;
+                MainCanvasController.instance.VictoryCoiso();
+                GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().enabled=false;
+                Cursor.lockState = CursorLockMode.None;
+            }
+
         }
         else
         {
-            SceneManager.LoadScene("MainMenu");
+                if(curFase+1 <= maxFases)
+                {
+                    int proxima = curFase+1;
+                    SceneManager.LoadScene("Level "+proxima);
+                }
+                else
+                {
+                    SceneManager.LoadScene("MainMenu");
+                }
         }
     }
 
-    public bool SceneExists(string Scenename)
+
+    public void Update()
     {
-        foreach(Scene a in SceneManager.GetAllScenes())
+        if(Input.GetKeyDown(KeyCode.Escape) && gameStarted)
         {
-            if(a.name==Scenename)
-            {
-                return true;
-            }
+            SceneManager.LoadScene("MainMenu");
         }
-        return false;
     }
 }

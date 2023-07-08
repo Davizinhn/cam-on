@@ -168,6 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4322364108702109978}
+  - component: {fileID: 8621385726343517380}
   m_Layer: 0
   m_Name: Neck
   m_TagString: Untagged
@@ -191,6 +192,19 @@ Transform:
   m_Father: {fileID: 4322364108930467395}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8621385726343517380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322364108702109977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db2cc9d15d8e1c4e81fbc747c163d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
 --- !u!1 &4322364108724285708
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +411,7 @@ MonoBehaviour:
   distance: 1.1
   normalSpeed: 3
   jumpSpeed: 2
+  fastIK: {fileID: 8621385726343517380}
 --- !u!1 &4322364108817405040
 GameObject:
   m_ObjectHideFlags: 0

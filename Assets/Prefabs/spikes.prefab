@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4042093331202431321}
   - component: {fileID: 2304876752861343122}
   - component: {fileID: -5638377156993319423}
+  - component: {fileID: 4952919298618866303}
   m_Layer: 0
   m_Name: spikes
   m_TagString: Untagged
@@ -93,7 +94,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2528940550823114892}
   m_Material: {fileID: 13400000, guid: d926619b9c6967f4a8e44e037babb1e3, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.81, y: 0.24999999, z: 0.79999995}
@@ -116,3 +117,15 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &4952919298618866303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528940550823114892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bdf44c2ed869d4c909ac3a87027d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

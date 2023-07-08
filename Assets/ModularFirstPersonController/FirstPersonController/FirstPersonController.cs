@@ -21,6 +21,8 @@ public class FirstPersonController : MonoBehaviour
     #region Camera Movement Variables
 
     public Camera playerCamera;
+    public AudioSource zoomSource;
+    public AudioSource jumpSource;
 
     public float fov = 60f;
     public bool invertCamera = false;
@@ -232,11 +234,12 @@ public class FirstPersonController : MonoBehaviour
         {
             // Changes isZoomed when key is pressed
             // Behavior for toogle zoom
-            if(Input.GetKeyDown(zoomKey) && !holdToZoom && !isSprinting)
+            if(Input.GetKeyDown(zoomKey) && !holdToZoom)
             {
                 if (!isZoomed)
                 {
                     isZoomed = true;
+                    zoomSource.Play();
                 }
                 else
                 {
@@ -246,10 +249,11 @@ public class FirstPersonController : MonoBehaviour
 
             // Changes isZoomed when key is pressed
             // Behavior for hold to zoom
-            if(holdToZoom && !isSprinting)
+            if(holdToZoom)
             {
                 if(Input.GetKeyDown(zoomKey))
                 {
+                    zoomSource.Play();
                     isZoomed = true;
                 }
                 else if(Input.GetKeyUp(zoomKey))
@@ -263,7 +267,7 @@ public class FirstPersonController : MonoBehaviour
             {
                 playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, zoomFOV, zoomStepTime * Time.deltaTime);
             }
-            else if(!isZoomed && !isSprinting)
+            else if(!isZoomed)
             {
                 playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, fov, zoomStepTime * Time.deltaTime);
             }
@@ -329,6 +333,7 @@ public class FirstPersonController : MonoBehaviour
         if(enableJump && Input.GetKeyDown(jumpKey) && isGrounded)
         {
             Jump();
+            jumpSource.Play();
         }
 
         #endregion
@@ -563,6 +568,9 @@ public class FirstPersonController : MonoBehaviour
         fpc.playerCamera = (Camera)EditorGUILayout.ObjectField(new GUIContent("Camera", "Camera attached to the controller."), fpc.playerCamera, typeof(Camera), true);
         fpc.fov = EditorGUILayout.Slider(new GUIContent("Field of View", "The camera’s view angle. Changes the player camera directly."), fpc.fov, fpc.zoomFOV, 179f);
         fpc.cameraCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Camera Rotation", "Determines if the camera is allowed to move."), fpc.cameraCanMove);
+
+        fpc.zoomSource = (AudioSource)EditorGUILayout.ObjectField(new GUIContent("zoom source", "Camera attached to the controller."), fpc.zoomSource, typeof(AudioSource), true);
+        fpc.jumpSource = (AudioSource)EditorGUILayout.ObjectField(new GUIContent("jump source", "Camera attached to the controller."), fpc.jumpSource, typeof(AudioSource), true);
 
         GUI.enabled = fpc.cameraCanMove;
         fpc.invertCamera = EditorGUILayout.ToggleLeft(new GUIContent("Invert Camera Rotation", "Inverts the up and down movement of the camera."), fpc.invertCamera);

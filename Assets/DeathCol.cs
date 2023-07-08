@@ -14,4 +14,15 @@ public class DeathCol : MonoBehaviour
             }
         }
     }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.tag=="Player")
+        {
+            if(GameManager.instance.gameStarted)
+            {
+                GameManager.instance.Perdeu();
+            }
+        }
+    }
 }

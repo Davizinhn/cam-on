@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DitzelGames.FastIK;
 using UnityEngine.AI;
 
 public class AIPessoa : MonoBehaviour
@@ -12,10 +13,11 @@ public class AIPessoa : MonoBehaviour
     public float distance;
     public float normalSpeed;
     public float jumpSpeed;
+    public FastIKLook fastIK;
 
     void Start()
     {
-        
+        fastIK.Target = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()
@@ -34,6 +36,9 @@ public class AIPessoa : MonoBehaviour
         }
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isRunning", agent.remainingDistance > 0.005f);
+        if(!GameManager.instance.gameStarted)
+        {
         agent.SetDestination(akinori.position);
+        }
     }
 }
