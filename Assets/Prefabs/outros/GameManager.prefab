@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStarted: 1
   curFase: 1
-  maxFases: 10
+  maxFases: 7
