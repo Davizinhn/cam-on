@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class FallWhenCollided : MonoBehaviour
 {
+
+    public bool ha = false;
+    
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.tag=="Player")
         {
             gameObject.AddComponent<Rigidbody>();
-            this.gameObject.GetComponent<Collider>().isTrigger=false;
+            this.gameObject.GetComponent<Collider>().isTrigger=ha;
             this.gameObject.GetComponent<AudioSource>().Play();
         }
     }
