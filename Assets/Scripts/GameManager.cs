@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         gameStarted=false;
         instance = this;
         int.TryParse(SceneManager.GetActiveScene().name.Split(" ")[1], out curFase);
-        Invoke("Comecar", 0.1f);
+        Invoke("Comecar", 0.5f);
 
     }
 

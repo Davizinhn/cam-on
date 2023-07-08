@@ -8,6 +8,7 @@ public class PassarFase : MonoBehaviour
     {
         if(col.gameObject.tag=="Player")
         {
+            this.gameObject.GetComponent<AudioSource>().Play();
             GameManager.instance.PassarDeFase();
         }
     }

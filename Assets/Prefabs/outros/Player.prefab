@@ -1902,7 +1902,7 @@ MonoBehaviour:
   outlineMode: 3
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 2
-  precomputeOutline: 0
+  precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
 --- !u!114 &4322364110175348600
