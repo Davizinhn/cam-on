@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         gameStarted=false;
         SceneManager.LoadScene("DieScreen", LoadSceneMode.Additive);
         Time.timeScale=0.25f;
-        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().mouseSensitivity = 0.05f;
+        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().mouseSensitivity = 0.04f;
         StartCoroutine(PerderSequence());
     }
 
