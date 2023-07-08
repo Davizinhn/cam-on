@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level 3.unity
     guid: ed7207a3400b14445a59d6652559bea6
   - enabled: 1
+    path: Assets/Scenes/Levels/Level 4.unity
+    guid: 6d4dd66fca9acf54db8165831de37b42
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 5.unity
+    guid: 544020087dd44b44f9acc31e88b079cd
+  - enabled: 1
     path: Assets/Scenes/DieScreen.unity
     guid: d41b59dff7790514a9e8958a453c076c
   m_configObjects: {}
