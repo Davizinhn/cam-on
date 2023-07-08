@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1600845523906570889}
   - component: {fileID: 2420828908727739692}
   - component: {fileID: 467376387287044582}
-  - component: {fileID: 2420828908727739690}
   - component: {fileID: 2420828908727739691}
   m_Layer: 0
   m_Name: flowers
@@ -88,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2420828908727739690
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124722834458144819}
-  m_Material: {fileID: 13400000, guid: d926619b9c6967f4a8e44e037babb1e3, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2234555996635838280, guid: b516ae931567ec84ea4b4bf1992a7031, type: 3}
 --- !u!114 &2420828908727739691
 MonoBehaviour:
   m_ObjectHideFlags: 0
