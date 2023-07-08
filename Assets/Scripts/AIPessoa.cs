@@ -14,14 +14,26 @@ public class AIPessoa : MonoBehaviour
     public float normalSpeed;
     public float jumpSpeed;
     public FastIKLook fastIK;
+    public AudioSource puloSound;
+    public bool jafizSom = false;
 
     void Start()
     {
         fastIK.Target = GameObject.FindWithTag("Player").transform;
     }
 
+
     void Update()
     {
+        if(!isGrounded && !jafizSom)
+        {
+            puloSound.Play();
+            jafizSom=true;
+        }
+        if(isGrounded)
+        {
+            jafizSom = false;
+        }
         RaycastHit hit;
         Ray ray = new Ray(this.gameObject.transform.position, Vector3.down);
         if (Physics.Raycast(ray, out hit, distance)) {
