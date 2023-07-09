@@ -553,6 +553,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1578639279}
     m_Modifications:
+    - target: {fileID: 568813169618733699, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7977619
+      objectReference: {fileID: 0}
+    - target: {fileID: 568813169618733699, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Size.z
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 568813169618733699, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Center.y
+      value: 0.39888096
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305882426487914059, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4078046b49e44e64fb6ab0b6a3429930, type: 2}
     - target: {fileID: 3479891651772499236, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -612,6 +628,10 @@ PrefabInstance:
     - target: {fileID: 4251643968301768606, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
       propertyPath: m_Name
       value: vrido (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251643968301768606, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4251643968301768606, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1448,6 +1468,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1578639279}
     m_Modifications:
+    - target: {fileID: 568813169618733699, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8775645
+      objectReference: {fileID: 0}
+    - target: {fileID: 568813169618733699, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Size.z
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 568813169618733699, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Center.y
+      value: 0.43878224
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305882426487914059, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4078046b49e44e64fb6ab0b6a3429930, type: 2}
     - target: {fileID: 3479891651772499236, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1507,6 +1543,10 @@ PrefabInstance:
     - target: {fileID: 4251643968301768606, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
       propertyPath: m_Name
       value: vrido
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251643968301768606, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4251643968301768606, guid: 00939a7d1cb15474a8623199fe199e43, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1757,6 +1797,8 @@ MonoBehaviour:
         m_CallState: 2
   proximoAkinori: {fileID: 363435699}
   jaclicou: 0
+  changeVelocity: 0
+  newVelocity: 0
 --- !u!1001 &1240185736
 PrefabInstance:
   m_ObjectHideFlags: 0

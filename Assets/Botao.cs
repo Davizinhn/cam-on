@@ -8,6 +8,8 @@ public class Botao : MonoBehaviour
     public UnityEngine.UI.Button.ButtonClickedEvent eventToExecute = new UnityEngine.UI.Button.ButtonClickedEvent();
     public Transform proximoAkinori;
     public bool jaclicou=  false;
+    public bool changeVelocity = false;
+    public float newVelocity = 0f;
 
     public void Update()
     {
@@ -21,6 +23,10 @@ public class Botao : MonoBehaviour
                 agent.SetDestination(proximoAkinori.position);
                 eventToExecute.Invoke();
                 this.gameObject.GetComponent<AudioSource>().Play();
+                if(changeVelocity)
+                {
+                    player.GetComponent<AIPessoa>().normalSpeed = newVelocity;
+                }
             }
         }
 
