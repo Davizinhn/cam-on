@@ -291,12 +291,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 952861741}
     m_Modifications:
     - target: {fileID: 4593570490914401141, guid: 1668f387d43a141428075ef28bc58989, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593570490914401141, guid: 1668f387d43a141428075ef28bc58989, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8491692104211691650, guid: 1668f387d43a141428075ef28bc58989, type: 3}
       propertyPath: m_Name
       value: bridgeRamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491692104211691650, guid: 1668f387d43a141428075ef28bc58989, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8491692104211691650, guid: 1668f387d43a141428075ef28bc58989, type: 3}
       propertyPath: m_NavMeshLayer
@@ -1147,6 +1155,10 @@ PrefabInstance:
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_Name
       value: treePine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2150,6 +2162,10 @@ PrefabInstance:
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_Name
       value: treePine (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1946181489675777070, guid: 4303bdc6f55b0e84a8b2ef96ecdfd68f, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3250,12 +3266,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 952861741}
     m_Modifications:
     - target: {fileID: 4593570490914401141, guid: 1668f387d43a141428075ef28bc58989, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593570490914401141, guid: 1668f387d43a141428075ef28bc58989, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8491692104211691650, guid: 1668f387d43a141428075ef28bc58989, type: 3}
       propertyPath: m_Name
       value: bridgeRamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491692104211691650, guid: 1668f387d43a141428075ef28bc58989, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8491692104211691650, guid: 1668f387d43a141428075ef28bc58989, type: 3}
       propertyPath: m_NavMeshLayer

@@ -11,7 +11,10 @@ public class MainMenuController : MonoBehaviour
     
     void Update()
     {
-        PlayerPrefs.SetInt("PlayerQuality", myDrop.value);
+        if(PlayerPrefs.GetInt("PlayerQuality")!=myDrop.value)
+        {
+            PlayerPrefs.SetInt("PlayerQuality", myDrop.value);
+        }
     }
 
     public void OnAtualiazar()
@@ -49,6 +52,7 @@ public class MainMenuController : MonoBehaviour
         {
             PlayerPrefs.SetInt("PostProcess", 1);
         }
+        SceneManager.UnloadScene("DieScreen");
     }
     public void PlayThisLevel(string levelName)
     {
